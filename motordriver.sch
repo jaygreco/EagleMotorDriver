@@ -130,6 +130,29 @@
 <text x="-7.62" y="-3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.524" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="14PDIP">
+<pad name="1OUT" x="0" y="0" drill="1.016" diameter="1.9304"/>
+<pad name="1-" x="0" y="-2.54" drill="1.016" diameter="1.9304"/>
+<pad name="1+" x="0" y="-5.08" drill="1.016" diameter="1.9304"/>
+<pad name="VCC" x="0" y="-7.62" drill="1.016" diameter="1.9304"/>
+<pad name="2+" x="0" y="-10.16" drill="1.016" diameter="1.9304"/>
+<pad name="2-" x="0" y="-12.7" drill="1.016" diameter="1.9304"/>
+<pad name="2OUT" x="0" y="-15.24" drill="1.016" diameter="1.9304"/>
+<pad name="3OUT" x="7.62" y="-15.24" drill="1.016" diameter="1.9304"/>
+<pad name="3-" x="7.62" y="-12.7" drill="1.016" diameter="1.9304"/>
+<pad name="3+" x="7.62" y="-10.16" drill="1.016" diameter="1.9304"/>
+<pad name="GND" x="7.62" y="-7.62" drill="1.016" diameter="1.9304"/>
+<pad name="4+" x="7.62" y="-5.08" drill="1.016" diameter="1.9304"/>
+<pad name="4-" x="7.62" y="-2.54" drill="1.016" diameter="1.9304"/>
+<pad name="4OUT" x="7.62" y="0" drill="1.016" diameter="1.9304"/>
+<circle x="1.27" y="2.54" radius="0.635" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="5.08" y2="2.54" width="0.127" layer="25"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-17.78" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-17.78" x2="2.54" y2="-17.78" width="0.127" layer="27"/>
+<wire x1="2.54" y1="-17.78" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<text x="1.27" y="3.81" size="1.27" layer="21" font="vector">&gt;Name</text>
+<text x="0.635" y="-19.685" size="1.27" layer="21" font="vector">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MOSFET">
@@ -173,6 +196,29 @@
 <pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="TL084">
+<pin name="OUT1" x="-7.62" y="25.4" visible="pad" length="short"/>
+<pin name="1-" x="-7.62" y="20.32" visible="pad" length="short"/>
+<pin name="1+" x="-7.62" y="15.24" visible="pad" length="short"/>
+<pin name="VCC" x="-7.62" y="10.16" visible="pad" length="short"/>
+<pin name="2+" x="-7.62" y="5.08" visible="pad" length="short"/>
+<pin name="2-" x="-7.62" y="0" visible="pad" length="short"/>
+<pin name="OUT2" x="-7.62" y="-5.08" visible="pad" length="short"/>
+<pin name="OUT3" x="7.62" y="-5.08" visible="pad" length="short" rot="R180"/>
+<pin name="3-" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="3+" x="7.62" y="5.08" visible="pad" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="10.16" visible="pad" length="short" rot="R180"/>
+<pin name="4+" x="7.62" y="15.24" visible="pad" length="short" rot="R180"/>
+<pin name="4-" x="7.62" y="20.32" visible="pad" length="short" rot="R180"/>
+<pin name="OUT4" x="7.62" y="25.4" visible="pad" length="short" rot="R180"/>
+<wire x1="-5.08" y1="25.4" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="25.4" width="0.254" layer="94"/>
+<wire x1="5.08" y1="25.4" x2="-5.08" y2="25.4" width="0.254" layer="94"/>
+<circle x="-2.54" y="23.114" radius="0.567959375" width="0.254" layer="94"/>
+<text x="-4.064" y="27.686" size="1.778" layer="95">&gt;Name</text>
+<text x="-4.572" y="-8.89" size="1.778" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MOSFET" prefix="Q">
@@ -185,6 +231,34 @@
 <connect gate="G$1" pin="D" pad="D"/>
 <connect gate="G$1" pin="G" pad="G"/>
 <connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TL084_PDIP" prefix="U">
+<gates>
+<gate name="G$1" symbol="TL084" x="0" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="14PDIP">
+<connects>
+<connect gate="G$1" pin="1+" pad="1+"/>
+<connect gate="G$1" pin="1-" pad="1-"/>
+<connect gate="G$1" pin="2+" pad="2+"/>
+<connect gate="G$1" pin="2-" pad="2-"/>
+<connect gate="G$1" pin="3+" pad="3+"/>
+<connect gate="G$1" pin="3-" pad="3-"/>
+<connect gate="G$1" pin="4+" pad="4+"/>
+<connect gate="G$1" pin="4-" pad="4-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="OUT1" pad="1OUT"/>
+<connect gate="G$1" pin="OUT2" pad="2OUT"/>
+<connect gate="G$1" pin="OUT3" pad="3OUT"/>
+<connect gate="G$1" pin="OUT4" pad="4OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -205,6 +279,7 @@
 </classes>
 <parts>
 <part name="Q1" library="motordriverslib" deviceset="MOSFET" device=""/>
+<part name="U1" library="motordriverslib" deviceset="TL084_PDIP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -212,6 +287,7 @@
 </plain>
 <instances>
 <instance part="Q1" gate="G$1" x="12.7" y="71.12"/>
+<instance part="U1" gate="G$1" x="-10.16" y="71.12"/>
 </instances>
 <busses>
 </busses>
