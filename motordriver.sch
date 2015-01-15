@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1295,7 +1295,7 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-139.7" y1="27.94" x2="-139.7" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC_12V" class="0">
 <segment>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <pinref part="Q4" gate="G$1" pin="D"/>
@@ -1383,18 +1383,7 @@ add fan LDO and header pins (12v)</text>
 <pinref part="U3" gate="G$1" pin="OUT"/>
 <wire x1="-175.26" y1="83.82" x2="-165.1" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="83.82" x2="-86.36" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="P$1"/>
-<wire x1="116.84" y1="63.5" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<junction x="116.84" y="53.34"/>
-<pinref part="D2" gate="1" pin="A"/>
-<wire x1="116.84" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="63.5" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
-<junction x="116.84" y="63.5"/>
 <wire x1="-86.36" y1="-27.94" x2="-86.36" y2="83.82" width="0.1524" layer="91"/>
-<junction x="-86.36" y="83.82"/>
 <wire x1="-165.1" y1="144.78" x2="-165.1" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-165.1" y="83.82"/>
 <wire x1="-482.6" y1="71.12" x2="-502.92" y2="71.12" width="0.1524" layer="91"/>
@@ -1446,6 +1435,16 @@ add fan LDO and header pins (12v)</text>
 <pinref part="P+13" gate="VCC" pin="VCC"/>
 <pinref part="C24" gate="G$1" pin="+"/>
 <wire x1="83.82" y1="160.02" x2="83.82" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="P$1"/>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="116.84" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="63.5" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<junction x="116.84" y="53.34"/>
+<label x="114.3" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
