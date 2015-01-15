@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1198,7 +1198,7 @@ add fan LDO and header pins (12v)</text>
 <instance part="GND23" gate="1" x="-284.48" y="-68.58"/>
 <instance part="R14" gate="G$1" x="-353.06" y="-60.96"/>
 <instance part="R15" gate="G$1" x="-414.02" y="-76.2"/>
-<instance part="R16" gate="G$1" x="-414.02" y="-91.44"/>
+<instance part="R16" gate="G$1" x="-350.52" y="-76.2"/>
 <instance part="U11" gate="G$1" x="-266.7" y="-63.5"/>
 <instance part="C21" gate="G$1" x="-284.48" y="-58.42" rot="R180"/>
 <instance part="D8" gate="1" x="-266.7" y="-45.72"/>
@@ -2096,22 +2096,6 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-368.3" y1="-66.04" x2="-368.3" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$69" class="0">
-<segment>
-<pinref part="U10" gate="G$1" pin="P$4"/>
-<wire x1="-472.44" y1="-68.58" x2="-472.44" y2="-91.44" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="-472.44" y1="-91.44" x2="-419.1" y2="-91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$70" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="-408.94" y1="-91.44" x2="-342.9" y2="-91.44" width="0.1524" layer="91"/>
-<pinref part="Q13" gate="G$1" pin="G"/>
-<wire x1="-342.9" y1="-91.44" x2="-342.9" y2="-76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$71" class="0">
 <segment>
 <pinref part="Q14" gate="G$1" pin="S"/>
@@ -2156,16 +2140,6 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-238.76" y1="-15.24" x2="-358.14" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="-358.14" y1="-15.24" x2="-358.14" y2="-60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$75" class="0">
-<segment>
-<pinref part="U11" gate="G$1" pin="P$4"/>
-<wire x1="-274.32" y1="-71.12" x2="-274.32" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="-274.32" y1="-101.6" x2="-424.18" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="-424.18" y1="-101.6" x2="-424.18" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="-424.18" y1="-76.2" x2="-419.1" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$76" class="0">
@@ -2235,6 +2209,30 @@ add fan LDO and header pins (12v)</text>
 <pinref part="J6" gate="G$1" pin="2"/>
 <wire x1="-154.94" y1="-121.92" x2="-137.16" y2="-121.92" width="0.1524" layer="91"/>
 <wire x1="-137.16" y1="-121.92" x2="-137.16" y2="-111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="U10" gate="G$1" pin="P$4"/>
+<wire x1="-472.44" y1="-68.58" x2="-472.44" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-472.44" y1="-76.2" x2="-419.1" y2="-76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="U11" gate="G$1" pin="P$4"/>
+<wire x1="-274.32" y1="-71.12" x2="-274.32" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-274.32" y1="-93.98" x2="-355.6" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-355.6" y1="-93.98" x2="-355.6" y2="-76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="Q13" gate="G$1" pin="G"/>
+<wire x1="-345.44" y1="-76.2" x2="-342.9" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
