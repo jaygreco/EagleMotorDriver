@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -513,6 +513,16 @@
 <text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;Name</text>
 <text x="-2.032" y="-0.508" size="0.8128" layer="21">&gt;Value</text>
 </package>
+<package name="LED_0603">
+<wire x1="0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
+<wire x1="-0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.17" x2="0.2338" y2="-0.14" width="0.2032" layer="21"/>
+<wire x1="-0.0254" y1="0.1546" x2="-0.2184" y2="-0.14" width="0.2032" layer="21"/>
+<smd name="C" x="0" y="0.877" dx="1" dy="1" layer="1" roundness="30"/>
+<smd name="A" x="0" y="-0.877" dx="1" dy="1" layer="1" roundness="30"/>
+<text x="-0.6985" y="-0.889" size="0.4064" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.0795" y="-1.016" size="0.4064" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="74XX139">
@@ -743,6 +753,30 @@
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="LED">
+<wire x1="1.27" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="1.778" x2="-3.429" y2="0.381" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0.635" x2="-3.302" y2="-0.762" width="0.1524" layer="94"/>
+<text x="3.556" y="-2.032" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-2.032" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="C" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="0.381"/>
+<vertex x="-3.048" y="1.27"/>
+<vertex x="-2.54" y="0.762"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-0.762"/>
+<vertex x="-2.921" y="0.127"/>
+<vertex x="-2.413" y="-0.381"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1046,6 +1080,22 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="LED_SMT" prefix="D">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="LED_0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -1250,6 +1300,9 @@
 <part name="R20" library="motordriverslib" deviceset="RES_SMT" device=""/>
 <part name="R21" library="motordriverslib" deviceset="RES_SMT" device=""/>
 <part name="R22" library="motordriverslib" deviceset="RES_SMT" device=""/>
+<part name="D1" library="motordriverslib" deviceset="LED_SMT" device=""/>
+<part name="R23" library="motordriverslib" deviceset="RES_SMT" device=""/>
+<part name="GND32" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1429,6 +1482,9 @@ add fan LDO and header pins (12v)</text>
 <instance part="R20" gate="G$1" x="-58.42" y="-88.9" rot="R90"/>
 <instance part="R21" gate="G$1" x="-20.32" y="-86.36" rot="R90"/>
 <instance part="R22" gate="G$1" x="-5.08" y="-88.9" rot="R90"/>
+<instance part="D1" gate="G$1" x="-73.66" y="127"/>
+<instance part="R23" gate="G$1" x="-73.66" y="114.3" rot="R90"/>
+<instance part="GND32" gate="1" x="-73.66" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -1539,6 +1595,11 @@ add fan LDO and header pins (12v)</text>
 <pinref part="U2" gate="G$1" pin="VCC"/>
 <wire x1="-203.2" y1="43.18" x2="-190.5" y2="43.18" width="0.1524" layer="91"/>
 <label x="-205.74" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="-73.66" y1="132.08" x2="-73.66" y2="134.62" width="0.1524" layer="91"/>
+<label x="-76.2" y="134.62" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1741,6 +1802,10 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-22.86" y1="-96.52" x2="-15.24" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="-15.24" y1="-96.52" x2="-15.24" y2="-101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND32" gate="1" pin="GND"/>
+<wire x1="-73.66" y1="106.68" x2="-73.66" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -2723,6 +2788,19 @@ add fan LDO and header pins (12v)</text>
 <pinref part="R20" gate="G$1" pin="1"/>
 <junction x="-58.42" y="-93.98"/>
 <label x="-53.34" y="-93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="-73.66" y1="124.46" x2="-73.66" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="-73.66" y1="109.22" x2="-73.66" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
