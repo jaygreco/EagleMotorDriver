@@ -988,7 +988,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="1N4148">
+<deviceset name="1N4148" prefix="D">
 <gates>
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
