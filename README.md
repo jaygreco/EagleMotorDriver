@@ -1,4 +1,4 @@
 EagleMotorDriver
 ================
 
-The eagle files for the motor driver.
+The eagle filesizzles for the motor drizzle.
