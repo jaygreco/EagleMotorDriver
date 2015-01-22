@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -248,9 +248,9 @@
 <wire x1="-0.127" y1="1.651" x2="0" y2="1.651" width="0.127" layer="21"/>
 </package>
 <package name="RADIAL_18">
-<pad name="+" x="0" y="0" drill="0.9" diameter="1.778"/>
-<pad name="-" x="7.215" y="0" drill="0.9" diameter="1.6764" shape="square"/>
-<circle x="3.6" y="0" radius="9.6" width="0.127" layer="21"/>
+<pad name="+" x="0" y="0" drill="1.524" diameter="3.048"/>
+<pad name="-" x="7.215" y="0" drill="1.524" diameter="3.048" shape="square"/>
+<circle x="3.6" y="0" radius="9.6" width="0.254" layer="21"/>
 <wire x1="10" y1="6" x2="10" y2="-6" width="1.27" layer="21"/>
 <wire x1="11" y1="5" x2="11" y2="-5" width="1.27" layer="21"/>
 <wire x1="12" y1="-3" x2="12" y2="3" width="1.27" layer="21"/>
@@ -354,6 +354,8 @@
 <wire x1="12.3" y1="-3.6" x2="12.3" y2="-3.9" width="0.127" layer="21"/>
 <wire x1="12.4" y1="-3.5" x2="12.4" y2="-3.8" width="0.127" layer="21"/>
 <wire x1="12.5" y1="-3.3" x2="12.5" y2="-3.5" width="0.127" layer="21"/>
+<text x="-1.27" y="10.16" size="2.54" layer="21" font="vector">&gt;Name</text>
+<circle x="3.6" y="0" radius="9.6" width="0.508" layer="21"/>
 </package>
 <package name="0603">
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
@@ -410,13 +412,12 @@
 <rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
 </package>
 <package name="RADIAL_1O">
-<pad name="+" x="0" y="0" drill="0.9" diameter="1.778"/>
-<pad name="-" x="4.9" y="0" drill="0.9" diameter="1.6764" shape="square"/>
+<pad name="+" x="0" y="0" drill="1.016" diameter="2.159"/>
+<pad name="-" x="4.9" y="0" drill="1.016" diameter="2.159" shape="square"/>
 <circle x="2.5" y="0" radius="5.1" width="0.127" layer="21"/>
 <wire x1="6" y1="3.6" x2="6" y2="-3.7" width="0.127" layer="21"/>
 <wire x1="6.1" y1="3.5" x2="6.1" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="6.2" y1="-3.4" x2="6.2" y2="-3.3" width="0.127" layer="21"/>
-<wire x1="6.2" y1="-3.3" x2="6.2" y2="3.4" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-3.5" x2="6.2" y2="3.4" width="0.127" layer="21"/>
 <wire x1="6.3" y1="3.3" x2="6.3" y2="-3.3" width="0.127" layer="21"/>
 <wire x1="6.4" y1="-3.2" x2="6.4" y2="-3" width="0.127" layer="21"/>
 <wire x1="6.4" y1="-3" x2="6.4" y2="3.2" width="0.127" layer="21"/>
@@ -442,8 +443,8 @@
 <wire x1="6.9" y1="-2.5" x2="6.8" y2="-2.5" width="0.127" layer="21"/>
 <wire x1="6.8" y1="-2.5" x2="6.8" y2="-2.7" width="0.127" layer="21"/>
 <wire x1="6.6" y1="3" x2="6.5" y2="3" width="0.127" layer="21"/>
-<wire x1="6.2" y1="-3.4" x2="6.2" y2="-3.5" width="0.127" layer="21"/>
 <text x="0" y="6" size="1.27" layer="21" font="vector">&gt;Name</text>
+<circle x="2.5" y="0" radius="4.953" width="0.1778" layer="21"/>
 </package>
 <package name="CONN_5X2">
 <pad name="P$1" x="-5.08" y="-1.27" drill="1.016" diameter="1.9304"/>
@@ -463,40 +464,18 @@
 <text x="-5.08" y="5.08" size="2.54" layer="25" font="vector">&gt;Name</text>
 </package>
 <package name="RADIAL_5">
-<pad name="+" x="-2.54" y="0" drill="0.9" diameter="1.778"/>
-<pad name="-" x="2.36" y="0" drill="0.9" diameter="1.6764" shape="square"/>
-<circle x="-0.04" y="0" radius="5.1" width="0.127" layer="21"/>
-<wire x1="3.46" y1="3.6" x2="3.46" y2="-3.7" width="0.127" layer="21"/>
-<wire x1="3.56" y1="3.5" x2="3.56" y2="-3.6" width="0.127" layer="21"/>
-<wire x1="3.66" y1="-3.4" x2="3.66" y2="-3.3" width="0.127" layer="21"/>
-<wire x1="3.66" y1="-3.3" x2="3.66" y2="3.4" width="0.127" layer="21"/>
-<wire x1="3.76" y1="3.3" x2="3.76" y2="-3.3" width="0.127" layer="21"/>
-<wire x1="3.86" y1="-3.2" x2="3.86" y2="-3" width="0.127" layer="21"/>
-<wire x1="3.86" y1="-3" x2="3.86" y2="3.2" width="0.127" layer="21"/>
-<wire x1="3.96" y1="3.1" x2="3.96" y2="3" width="0.127" layer="21"/>
-<wire x1="3.96" y1="3" x2="3.96" y2="-3" width="0.127" layer="21"/>
-<wire x1="4.06" y1="2.9" x2="4.06" y2="-3" width="0.127" layer="21"/>
-<wire x1="4.16" y1="2.8" x2="4.16" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="4.26" y1="2.7" x2="4.26" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="4.36" y1="2.4" x2="4.36" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="4.46" y1="2" x2="4.46" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="4.46" y1="2.3" x2="4.46" y2="2" width="0.127" layer="21"/>
-<wire x1="4.46" y1="2" x2="4.36" y2="2" width="0.127" layer="21"/>
-<wire x1="4.36" y1="2" x2="4.36" y2="2.5" width="0.127" layer="21"/>
-<wire x1="3.86" y1="-3" x2="3.96" y2="-3" width="0.127" layer="21"/>
-<wire x1="3.96" y1="-3" x2="3.96" y2="-3.1" width="0.127" layer="21"/>
-<wire x1="4.36" y1="-2.4" x2="4.26" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="4.26" y1="-2.4" x2="4.26" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="4.56" y1="2.1" x2="4.56" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="4.66" y1="-1.9" x2="4.66" y2="1.9" width="0.127" layer="21"/>
-<wire x1="4.76" y1="1.6" x2="4.76" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="4.86" y1="-1.3" x2="4.86" y2="1.3" width="0.127" layer="21"/>
-<wire x1="4.96" y1="0.8" x2="4.96" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="4.36" y1="-2.5" x2="4.26" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="4.26" y1="-2.5" x2="4.26" y2="-2.7" width="0.127" layer="21"/>
-<wire x1="4.06" y1="3" x2="3.96" y2="3" width="0.127" layer="21"/>
-<wire x1="3.66" y1="-3.4" x2="3.66" y2="-3.5" width="0.127" layer="21"/>
-<text x="-2.54" y="6" size="1.27" layer="21" font="vector">&gt;Name</text>
+<pad name="+" x="-0.889" y="0" drill="0.635"/>
+<pad name="-" x="0.889" y="0" drill="0.635" shape="square"/>
+<circle x="0" y="0" radius="2.54" width="0.127" layer="21"/>
+<text x="-2.54" y="3.46" size="1.27" layer="21" font="vector">&gt;Name</text>
+<wire x1="1.651" y1="1.905" x2="1.651" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.778" x2="1.778" y2="1.778" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.651" x2="1.905" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="2.032" y1="-1.397" x2="2.032" y2="1.524" width="0.127" layer="21"/>
+<wire x1="2.159" y1="-1.27" x2="2.159" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.286" y1="1.016" x2="2.286" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="2.413" y1="0.635" x2="2.413" y2="-0.635" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.4892" width="0.127" layer="21"/>
 </package>
 <package name="1N4148">
 <wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
@@ -1273,7 +1252,6 @@
 <part name="C22" library="motordriverslib" deviceset="CAP_330N_50V" device=""/>
 <part name="C26" library="motordriverslib" deviceset="CAP_330N_50V" device=""/>
 <part name="C27" library="motordriverslib" deviceset="CAP_330N_50V" device=""/>
-<part name="C28" library="motordriverslib" deviceset="CAP_330N_50V" device=""/>
 <part name="C29" library="motordriverslib" deviceset="CAP_330N_50V" device=""/>
 <part name="C30" library="motordriverslib" deviceset="CAP_330N_50V" device=""/>
 <part name="C31" library="motordriverslib" deviceset="CAP_330N_50V" device=""/>
@@ -1303,6 +1281,7 @@
 <part name="D1" library="motordriverslib" deviceset="LED_SMT" device=""/>
 <part name="R23" library="motordriverslib" deviceset="RES_SMT" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
+<part name="C8" library="motordriverslib" deviceset="CAP_330N_50V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1453,7 +1432,6 @@ add fan LDO and header pins (12v)</text>
 <instance part="C22" gate="G$1" x="-271.78" y="-22.86"/>
 <instance part="C26" gate="G$1" x="-434.34" y="-20.32"/>
 <instance part="C27" gate="G$1" x="-434.34" y="58.42"/>
-<instance part="C28" gate="G$1" x="-269.24" y="55.88"/>
 <instance part="C29" gate="G$1" x="-30.48" y="53.34"/>
 <instance part="C30" gate="G$1" x="137.16" y="50.8"/>
 <instance part="C31" gate="G$1" x="139.7" y="-20.32"/>
@@ -1485,6 +1463,7 @@ add fan LDO and header pins (12v)</text>
 <instance part="D1" gate="G$1" x="-73.66" y="127"/>
 <instance part="R23" gate="G$1" x="-73.66" y="114.3" rot="R90"/>
 <instance part="GND32" gate="1" x="-73.66" y="99.06"/>
+<instance part="C8" gate="G$1" x="-269.24" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -2115,8 +2094,8 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-279.4" y1="58.42" x2="-279.4" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-279.4" y1="63.5" x2="-269.24" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-269.24" y="63.5"/>
-<pinref part="C28" gate="G$1" pin="+"/>
 <pinref part="D10" gate="G$1" pin="C"/>
+<pinref part="C8" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$56" class="0">
@@ -2124,7 +2103,7 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-269.24" y1="53.34" x2="-269.24" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U9" gate="G$1" pin="P$6"/>
 <wire x1="-269.24" y1="48.26" x2="-279.4" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="C28" gate="G$1" pin="-"/>
+<pinref part="C8" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="N$59" class="0">
