@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1225,11 +1225,8 @@
 <part name="C12" library="motordriverslib" deviceset="CAP_1U" device=""/>
 <part name="S1" library="motordriverslib" deviceset="ROCKER_THRU" device=""/>
 <part name="U$1" library="motordriverslib" deviceset="7805_TO220" device=""/>
-<part name="P+12" library="supply1" deviceset="VCC" device=""/>
 <part name="P+13" library="supply1" deviceset="VCC" device=""/>
-<part name="C23" library="motordriverslib" deviceset="CAP_2200U_63V" device=""/>
 <part name="C24" library="motordriverslib" deviceset="CAP_2200U_63V" device=""/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -1405,11 +1402,8 @@ add fan LDO and header pins (12v)</text>
 <instance part="C12" gate="G$1" x="38.1" y="-27.94" rot="R90"/>
 <instance part="S1" gate="G$1" x="-203.2" y="104.14" rot="R270"/>
 <instance part="U$1" gate="G$1" x="-353.06" y="-78.74"/>
-<instance part="P+12" gate="VCC" x="-142.24" y="134.62"/>
 <instance part="P+13" gate="VCC" x="-109.22" y="134.62"/>
-<instance part="C23" gate="G$1" x="-142.24" y="121.92"/>
 <instance part="C24" gate="G$1" x="-109.22" y="121.92"/>
-<instance part="GND12" gate="1" x="-142.24" y="111.76"/>
 <instance part="GND13" gate="1" x="-109.22" y="111.76"/>
 <instance part="GND6" gate="1" x="-353.06" y="-96.52"/>
 <instance part="GND7" gate="1" x="-190.5" y="-22.86"/>
@@ -1489,11 +1483,6 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-66.04" y1="66.04" x2="-50.8" y2="66.04" width="0.1524" layer="91"/>
 <label x="-66.548" y="67.31" size="1.778" layer="95"/>
 <pinref part="D15" gate="G$1" pin="A"/>
-</segment>
-<segment>
-<pinref part="P+12" gate="VCC" pin="VCC"/>
-<pinref part="C23" gate="G$1" pin="+"/>
-<wire x1="-142.24" y1="132.08" x2="-142.24" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+13" gate="VCC" pin="VCC"/>
@@ -1691,11 +1680,6 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-307.34" y1="-30.48" x2="-297.18" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <junction x="-307.34" y="-30.48"/>
-</segment>
-<segment>
-<pinref part="C23" gate="G$1" pin="-"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="-142.24" y1="119.38" x2="-142.24" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="-"/>

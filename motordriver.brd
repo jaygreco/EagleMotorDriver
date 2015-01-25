@@ -712,7 +712,6 @@ design rules under a new name.</description>
 <element name="C2" library="motordriverslib" package="2DIP" value="CAP_1U" x="-88.9" y="109.22"/>
 <element name="C21" library="motordriverslib" package="2DIP" value="CAP_1U" x="21.59" y="19.05"/>
 <element name="C22" library="motordriverslib" package="RADIAL_5" value="CAP_330N_50V" x="7.62" y="25.4" rot="R90"/>
-<element name="C23" library="motordriverslib" package="RADIAL_18" value="CAP_2200U_63V" x="46.99" y="68.58"/>
 <element name="C24" library="motordriverslib" package="RADIAL_18" value="CAP_2200U_63V" x="-92.71" y="10.16"/>
 <element name="C25" library="motordriverslib" package="RADIAL_1O" value="CAP_330U_25V" x="-69.85" y="52.07"/>
 <element name="C26" library="motordriverslib" package="RADIAL_5" value="CAP_330N_50V" x="22.86" y="25.4" rot="R90"/>
@@ -820,7 +819,6 @@ design rules under a new name.</description>
 <contactref element="U5" pad="VCC"/>
 <contactref element="C1" pad="P$2"/>
 <contactref element="D15" pad="A"/>
-<contactref element="C23" pad="+"/>
 <contactref element="C24" pad="+"/>
 <contactref element="U4" pad="VCC"/>
 <contactref element="C3" pad="P$2"/>
@@ -850,18 +848,17 @@ design rules under a new name.</description>
 <wire x1="67.31" y1="62.23" x2="81.28" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="67.31" y1="64.77" x2="67.31" y2="62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="64.77" y1="60.96" x2="67.31" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="46.99" y1="68.58" x2="64.77" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="64.77" x2="46.99" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="62.23" x2="25.4" y2="64.77" width="0" layer="19" extent="1-1"/>
-<wire x1="22.86" y1="60.96" x2="25.4" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="62.23" x2="22.86" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="64.77" x2="6.35" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="60.96" x2="6.35" y2="62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="80.01" y1="20.32" x2="81.28" y2="59.69" width="0" layer="19" extent="1-1"/>
 <wire x1="77.47" y1="20.32" x2="80.01" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="77.47" y1="17.78" x2="77.47" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="95.25" y1="20.32" x2="80.01" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="95.25" y1="17.78" x2="95.25" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="62.23" x2="64.77" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="64.77" x2="25.4" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="60.96" x2="25.4" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="62.23" x2="22.86" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="64.77" x2="6.35" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="60.96" x2="6.35" y2="62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="21.59" x2="22.86" y2="60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="20.32" x2="21.59" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="17.78" x2="19.05" y2="20.32" width="0" layer="19" extent="1-1"/>
@@ -904,7 +901,6 @@ design rules under a new name.</description>
 <contactref element="U10" pad="COM"/>
 <contactref element="C21" pad="P$1"/>
 <contactref element="U11" pad="COM"/>
-<contactref element="C23" pad="-"/>
 <contactref element="C24" pad="-"/>
 <contactref element="U$1" pad="GND"/>
 <contactref element="C18" pad="-"/>
@@ -922,8 +918,7 @@ design rules under a new name.</description>
 <contactref element="J10" pad="1"/>
 <contactref element="J11" pad="1"/>
 <wire x1="67.691" y1="79.248" x2="84.201" y2="79.248" width="0" layer="19" extent="1-1"/>
-<wire x1="54.205" y1="68.58" x2="67.691" y2="79.248" width="0" layer="19" extent="1-1"/>
-<wire x1="64.77" y1="58.42" x2="54.205" y2="68.58" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="58.42" x2="67.691" y2="79.248" width="0" layer="19" extent="1-1"/>
 <wire x1="67.31" y1="57.15" x2="64.77" y2="58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="81.28" y1="57.15" x2="67.31" y2="57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="57.15" x2="81.28" y2="57.15" width="0" layer="19" extent="1-1"/>
