@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -372,15 +372,6 @@
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.2286" y1="-0.381" x2="0.2286" y2="0.381" layer="21"/>
 </package>
-<package name="SW_THRU">
-<pad name="+" x="0" y="0" drill="5.08" shape="square"/>
-<pad name="-" x="0" y="6.8707" drill="5.08" shape="square"/>
-<wire x1="-6.35" y1="11.43" x2="6.35" y2="11.43" width="0.508" layer="21"/>
-<wire x1="6.35" y1="11.43" x2="6.35" y2="-7.62" width="0.508" layer="21"/>
-<wire x1="6.35" y1="-7.62" x2="-6.35" y2="-7.62" width="0.508" layer="21"/>
-<wire x1="-6.35" y1="-7.62" x2="-6.35" y2="11.43" width="0.508" layer="21"/>
-<text x="-2.54" y="12.7" size="1.27" layer="21" font="vector">&gt;Name</text>
-</package>
 <package name="HEADER_1X3">
 <wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
@@ -660,15 +651,6 @@
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="ROCKER_SWITCH">
-<pin name="+" x="-7.62" y="0" visible="pad" length="point"/>
-<pin name="-" x="7.62" y="0" visible="pad" length="point" rot="R180"/>
-<wire x1="7.62" y1="0" x2="3.302" y2="0" width="0.254" layer="94"/>
-<circle x="2.54" y="0" radius="0.803215625" width="0.254" layer="94"/>
-<text x="-2.54" y="5.08" size="1.27" layer="94" font="vector">&gt;Name</text>
-<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-</symbol>
 <symbol name="7805">
 <pin name="IN" x="-7.62" y="0" visible="pad" length="short"/>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="short" rot="R90"/>
@@ -922,22 +904,6 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ROCKER_THRU" prefix="S">
-<gates>
-<gate name="G$1" symbol="ROCKER_SWITCH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SW_THRU">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1215,7 +1181,6 @@
 <part name="C6" library="motordriverslib" deviceset="CAP_1U" device=""/>
 <part name="C11" library="motordriverslib" deviceset="CAP_1U" device=""/>
 <part name="C12" library="motordriverslib" deviceset="CAP_1U" device=""/>
-<part name="S1" library="motordriverslib" deviceset="ROCKER_THRU" device=""/>
 <part name="U$1" library="motordriverslib" deviceset="7805_TO220" device=""/>
 <part name="P+13" library="supply1" deviceset="VCC" device=""/>
 <part name="C24" library="motordriverslib" deviceset="CAP_2200U_63V" device=""/>
@@ -1392,7 +1357,6 @@ add fan LDO and header pins (12v)</text>
 <instance part="C6" gate="G$1" x="-363.22" y="-30.48" rot="R90"/>
 <instance part="C11" gate="G$1" x="38.1" y="43.18" rot="R90"/>
 <instance part="C12" gate="G$1" x="38.1" y="-27.94" rot="R90"/>
-<instance part="S1" gate="G$1" x="-203.2" y="104.14" rot="R270"/>
 <instance part="U$1" gate="G$1" x="-353.06" y="-78.74"/>
 <instance part="P+13" gate="VCC" x="-109.22" y="134.62"/>
 <instance part="C24" gate="G$1" x="-109.22" y="121.92"/>
@@ -2210,13 +2174,6 @@ add fan LDO and header pins (12v)</text>
 </net>
 <net name="V_IN" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="-203.2" y1="93.98" x2="-193.04" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="-"/>
-<wire x1="-203.2" y1="96.52" x2="-203.2" y2="93.98" width="0.1524" layer="91"/>
-<label x="-200.66" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="IN"/>
 <wire x1="-360.68" y1="-78.74" x2="-365.76" y2="-78.74" width="0.1524" layer="91"/>
 <label x="-368.3" y="-78.74" size="1.778" layer="95"/>
@@ -2678,11 +2635,13 @@ add fan LDO and header pins (12v)</text>
 </net>
 <net name="VIN_RAW" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="+"/>
-<wire x1="-203.2" y1="111.76" x2="-203.2" y2="116.84" width="0.1524" layer="91"/>
 <label x="-208.28" y="116.84" size="1.778" layer="95"/>
 <pinref part="J9" gate="G$1" pin="+"/>
 <wire x1="-226.06" y1="116.84" x2="-203.2" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
+<wire x1="-203.2" y1="93.98" x2="-193.04" y2="93.98" width="0.1524" layer="91"/>
+<label x="-200.66" y="93.98" size="1.778" layer="95"/>
+<wire x1="-203.2" y1="116.84" x2="-203.2" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="X_A" class="0">
