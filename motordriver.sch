@@ -1070,7 +1070,7 @@
 <part name="C25" library="motordriverslib" deviceset="CAP_330U_25V" device=""/>
 <part name="J7" library="motordriverslib" deviceset="HEADER_1X3" device=""/>
 <part name="J8" library="motordriverslib" deviceset="HEADER_1X3" device=""/>
-<part name="U$2" library="motordriverslib" deviceset="CONN_5X2" device=""/>
+<part name="ENC" library="motordriverslib" deviceset="CONN_5X2" device=""/>
 <part name="R17" library="motordriverslib" deviceset="RES_SMT" device=""/>
 <part name="R18" library="motordriverslib" deviceset="RES_SMT" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
@@ -1243,7 +1243,7 @@ add fan LDO and header pins (12v)</text>
 <instance part="C25" gate="G$1" x="-172.72" y="86.36"/>
 <instance part="J7" gate="G$1" x="-213.36" y="10.16"/>
 <instance part="J8" gate="G$1" x="-144.78" y="5.08" rot="MR0"/>
-<instance part="U$2" gate="G$1" x="-111.76" y="-99.06"/>
+<instance part="ENC" gate="G$1" x="-111.76" y="-99.06"/>
 <instance part="R17" gate="G$1" x="-121.92" y="71.12" rot="R90"/>
 <instance part="R18" gate="G$1" x="-121.92" y="50.8" rot="R90"/>
 <instance part="GND26" gate="1" x="-121.92" y="35.56"/>
@@ -1562,13 +1562,13 @@ add fan LDO and header pins (12v)</text>
 <pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$10"/>
+<pinref part="ENC" gate="G$1" pin="P$10"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="-116.84" y1="-73.66" x2="-137.16" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-137.16" y1="-73.66" x2="-137.16" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
+<pinref part="ENC" gate="G$1" pin="P$1"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="-116.84" y1="-96.52" x2="-137.16" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="-137.16" y1="-96.52" x2="-137.16" y2="-99.06" width="0.1524" layer="91"/>
@@ -2178,12 +2178,12 @@ add fan LDO and header pins (12v)</text>
 <label x="-129.54" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$2"/>
+<pinref part="ENC" gate="G$1" pin="P$2"/>
 <wire x1="-116.84" y1="-93.98" x2="-127" y2="-93.98" width="0.1524" layer="91"/>
 <label x="-129.54" y="-93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$9"/>
+<pinref part="ENC" gate="G$1" pin="P$9"/>
 <wire x1="-116.84" y1="-76.2" x2="-127" y2="-76.2" width="0.1524" layer="91"/>
 <label x="-129.54" y="-76.2" size="1.778" layer="95"/>
 </segment>
@@ -2510,7 +2510,7 @@ add fan LDO and header pins (12v)</text>
 </net>
 <net name="X_A" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$4"/>
+<pinref part="ENC" gate="G$1" pin="P$4"/>
 <wire x1="-116.84" y1="-88.9" x2="-127" y2="-88.9" width="0.1524" layer="91"/>
 <label x="-127" y="-88.9" size="1.778" layer="95"/>
 </segment>
@@ -2525,7 +2525,7 @@ add fan LDO and header pins (12v)</text>
 </net>
 <net name="Y_A" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$7"/>
+<pinref part="ENC" gate="G$1" pin="P$7"/>
 <wire x1="-127" y1="-81.28" x2="-116.84" y2="-81.28" width="0.1524" layer="91"/>
 <label x="-127" y="-81.28" size="1.778" layer="95"/>
 </segment>
@@ -2540,7 +2540,7 @@ add fan LDO and header pins (12v)</text>
 </net>
 <net name="Y_B" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$6"/>
+<pinref part="ENC" gate="G$1" pin="P$6"/>
 <wire x1="-116.84" y1="-83.82" x2="-127" y2="-83.82" width="0.1524" layer="91"/>
 <label x="-127" y="-83.82" size="1.778" layer="95"/>
 </segment>
@@ -2555,7 +2555,7 @@ add fan LDO and header pins (12v)</text>
 </net>
 <net name="X_B" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$5"/>
+<pinref part="ENC" gate="G$1" pin="P$5"/>
 <wire x1="-116.84" y1="-86.36" x2="-127" y2="-86.36" width="0.1524" layer="91"/>
 <label x="-127" y="-86.36" size="1.778" layer="95"/>
 </segment>
