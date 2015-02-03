@@ -1388,8 +1388,13 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-73.66" y1="132.08" x2="-73.66" y2="134.62" width="0.1524" layer="91"/>
 <label x="-76.2" y="134.62" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="IN"/>
+<wire x1="-360.68" y1="-78.74" x2="-365.76" y2="-78.74" width="0.1524" layer="91"/>
+<label x="-368.3" y="-78.74" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="GND" class="0">
+<net name="GND_32" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -2031,11 +2036,6 @@ add fan LDO and header pins (12v)</text>
 </segment>
 </net>
 <net name="V_IN" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="IN"/>
-<wire x1="-360.68" y1="-78.74" x2="-365.76" y2="-78.74" width="0.1524" layer="91"/>
-<label x="-368.3" y="-78.74" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U12" gate="G$1" pin="IN"/>
 <wire x1="-297.18" y1="-78.74" x2="-304.8" y2="-78.74" width="0.1524" layer="91"/>
