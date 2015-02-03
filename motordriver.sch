@@ -2089,6 +2089,14 @@ add fan LDO and header pins (12v)</text>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <label x="66.04" y="-5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<label x="-208.28" y="116.84" size="1.778" layer="95"/>
+<pinref part="J9" gate="G$1" pin="+"/>
+<wire x1="-226.06" y1="116.84" x2="-203.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-203.2" y1="116.84" x2="-203.2" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
+<wire x1="-203.2" y1="93.98" x2="-193.04" y2="93.98" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC_12V_ALT" class="0">
 <segment>
@@ -2489,17 +2497,6 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-358.14" y1="38.1" x2="-358.14" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-358.14" y1="22.86" x2="-297.18" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-297.18" y1="43.18" x2="-297.18" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VIN_RAW" class="0">
-<segment>
-<label x="-208.28" y="116.84" size="1.778" layer="95"/>
-<pinref part="J9" gate="G$1" pin="+"/>
-<wire x1="-226.06" y1="116.84" x2="-203.2" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="-203.2" y1="93.98" x2="-193.04" y2="93.98" width="0.1524" layer="91"/>
-<label x="-200.66" y="93.98" size="1.778" layer="95"/>
-<wire x1="-203.2" y1="116.84" x2="-203.2" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="X_A" class="0">
