@@ -1586,8 +1586,9 @@ add fan LDO and header pins (12v)</text>
 <wire x1="-15.24" y1="-96.52" x2="-15.24" y2="-101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="R23" gate="G$1" pin="1"/>
 <pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="-73.66" y1="106.68" x2="-73.66" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="109.22" x2="-73.66" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -1639,6 +1640,7 @@ add fan LDO and header pins (12v)</text>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="43.18" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
+<junction x="33.02" y="40.64"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -1653,6 +1655,7 @@ add fan LDO and header pins (12v)</text>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="40.64" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="43.18" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
+<junction x="40.64" y="40.64"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -1760,6 +1763,7 @@ add fan LDO and header pins (12v)</text>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="-30.48" x2="35.56" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-27.94" x2="33.02" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="33.02" y="-30.48"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -1774,6 +1778,7 @@ add fan LDO and header pins (12v)</text>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="-30.48" x2="66.04" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-27.94" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="40.64" y="-30.48"/>
 </segment>
 </net>
 <net name="N$38" class="0">
@@ -1872,6 +1877,7 @@ add fan LDO and header pins (12v)</text>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="-368.3" y1="45.72" x2="-365.76" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-368.3" y1="48.26" x2="-368.3" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-368.3" y="45.72"/>
 </segment>
 </net>
 <net name="N$54" class="0">
@@ -1886,6 +1892,7 @@ add fan LDO and header pins (12v)</text>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="-360.68" y1="45.72" x2="-335.28" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-360.68" y1="45.72" x2="-360.68" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-360.68" y="45.72"/>
 </segment>
 </net>
 <net name="N$55" class="0">
@@ -1972,6 +1979,7 @@ add fan LDO and header pins (12v)</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="-368.3" y1="-33.02" x2="-365.76" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-368.3" y1="-30.48" x2="-368.3" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-368.3" y="-33.02"/>
 </segment>
 </net>
 <net name="N$71" class="0">
@@ -1986,6 +1994,7 @@ add fan LDO and header pins (12v)</text>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="-360.68" y1="-33.02" x2="-335.28" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-360.68" y1="-30.48" x2="-360.68" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-360.68" y="-33.02"/>
 </segment>
 </net>
 <net name="N$72" class="0">
@@ -2564,12 +2573,6 @@ add fan LDO and header pins (12v)</text>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="-73.66" y1="124.46" x2="-73.66" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="-73.66" y1="109.22" x2="-73.66" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
